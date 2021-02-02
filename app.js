@@ -6,6 +6,7 @@ import homeRouter from './src/routes/homeRoutes';
 import useRouter from './src/routes/userRoutes';
 import tokenRouter from './src/routes/tokenRoutes';
 import alunoRouter from './src/routes/alunoRoutes';
+import fotoRouter from './src/routes/fotoRoutes';
 import './src/database';
 
 class App {
@@ -25,6 +26,7 @@ class App {
     this.app.use('/users', useRouter);
     this.app.use('/tokens', tokenRouter);
     this.app.use('/alunos', alunoRouter);
+    this.app.use('/fotos', fotoRouter);
   }
 }
 
